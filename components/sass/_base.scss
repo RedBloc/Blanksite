@@ -1,0 +1,76 @@
+
+//Susy setup -------------------------------------------------
+
+$susy: (
+columns: 4,
+global-box-sizing: border-box,
+//debug: (image:show)
+);
+
+
+
+@include border-box-sizing;
+
+
+$small: 22em;
+$medium: 47em;
+$large: 58em;	
+
+
+@import "compass/layout/sticky-footer";
+
+@include breakpoint($medium) {
+@include sticky-footer(140px, ".wrapper", "#layout_footer", ".footerHolder");
+
+}//medium
+
+
+
+
+body {
+
+
+
+}
+#{headings()}{
+	font-weight: normal;
+
+}
+
+h1 {
+
+}
+
+
+h2 {
+
+}
+
+h4 {
+
+}
+
+a {
+	text-decoration: none;
+	@include transition(all 0.3s ease-in-out);
+	
+	&:hover {
+
+	}
+}
+
+p {
+	
+	}
+	
+	em {
+
+	}
+	strong {
+
+	}
+	
+
+
+
+
