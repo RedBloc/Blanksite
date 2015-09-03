@@ -24,6 +24,22 @@ $large: 58em;
 
 }//medium
 
+//Container -------------------------------------------------
+
+.layout {
+	padding: 0 .5rem;
+	@include container();
+	@include breakpoint($medium) {
+	padding: 0;
+	@include container($large);
+	@include show-grid(12);
+	
+	}//tablet
+	}//layout
+	
+
+	
+
 
 
 
