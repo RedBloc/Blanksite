@@ -1,20 +1,20 @@
 
 //Susy setup -------------------------------------------------
+
 $susy: (
 columns: 4,
 global-box-sizing: border-box,
 //debug: (image:show)
 );
+
+
+
 @include border-box-sizing;
 
-$small: 40em;
-$medium: 50em;
-$large: 71em;
-$biglarge: 94em;
 
-* {
-	 -webkit-font-smoothing: antialiased;
-}
+$small: 22em;
+$medium: 47em;
+$large: 58em;	
 
 
 @import "compass/layout/sticky-footer";
@@ -25,26 +25,12 @@ $biglarge: 94em;
 }//medium
 
 
-//Container -------------------------------------------------
-
-.layout {
-	padding: 0 .5rem;
-	@include container();
-	@include breakpoint($medium) {
-	padding: 0;
-	@include container($large);
-	@include show-grid(12);
-	
-	}//tablet
-	}//layout
-	
-
-	
-
 
 
 body {
-
+background: $backcol;
+color: $tgrey;
+font-family: $font-primary;
 
 
 }
@@ -76,14 +62,19 @@ a {
 }
 
 p {
-	
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	@include breakpoint($medium) {
+	font-size: 0.875rem;
+	line-height: 1.2rem;
+	}//medium
 	}
 	
 	em {
-
+		font-style: italic;
 	}
 	strong {
-
+		font-weight: bold;
 	}
 	
 
